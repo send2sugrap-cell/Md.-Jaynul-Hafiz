@@ -1,0 +1,6 @@
+{
+  "name": "Sucharu Graphics",
+  "description": "Sucharu Graphics & Printing Management System",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

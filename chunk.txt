@@ -1,0 +1,9 @@
+   274	                                            val vendorTotalPurchases = vendorBills.filter { it.vendorId == vendor.id }.sumOf { it.totalAmount }
+   275	                                            val vendorTotalPaid = vendorBills.filter { it.vendorId == vendor.id }.sumOf { it.advancePaid } + vendorPayments.filter { it.vendorId == vendor.id }.sumOf { it.amount }
+   276	                                            val vendorDue = vendorTotalPurchases - vendorTotalPaid
+   277	                                            
+   278	                                            VendorCard(
+   279	                                                vendor = vendor, 
+   280	                                                dueAmount = vendorDue,
+   281	                                                onClick = { onNavigateToLedger(vendor.id) }
+   282	                                            )
